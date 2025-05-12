@@ -1,0 +1,119 @@
+Algorithms
+Annotation
+Argument Defined Annonymous Inner Class
+Collection
+Comparable / Comparator
+Convenience Factory Method
+Data Structure 
+Design Pattern (Singleton, Factory, Observer, Decorator, MVC)
+Encapsulation / Inheritance / Polymorhpism / Abstraction / Interface
+Functional Interface 
+Generics
+Graph
+Hash Code
+Hash Function
+Hashmap
+hashset
+Lambda
+LinkedList
+List
+object_equal
+object equality
+Object Oriented Programming 
+overriding_hashcode
+Queue / Stack
+reference quality
+Search (Binary, Linear)
+Single Abstract Method
+Sorting
+Sorting (Quick sort, bubble sort, mergesort)
+Temporary Object
+Tree
+Tree_Set
+Tree Set 's element must be comparable
+Without Default Constructor Inherited Class must provide Proper argument value when calling super()
+ 
+ 
+wildcard <?>
+generic vs wildcard
+ 
+ 
+Streams 
+Stream = lazy pipe line for data
+Collection = turns stream to other useful stuffs like Set Map List
+Convenience Factory = shortcut to create stuff easily
+distint, filter, limit, map, skip, sorted, more
+Intermediate Operation
+Collection are Ingredient and Streams are Recipe to Cook with those ingredients
+Terminal Operation
+ 
+ 
+INTERMEDIATE VS TERMINAL OPERATIONS
+Intermediate operation = work on the data set before outputting the result
+Terminal Operation = End of all operation, A final operation.
+
+query 
+Functional Programming
+Functional Interface
+ 
+Lambda Expression
+Multiline lambda & Singleline lambda
+lambda with & without return (?)
+String Action (allows expressions (functions) as parameter datatype)
+(String str) can have "Hello world"
+(StringAction str) can have [input -> System.out.println(">>" + input);
+originally interfaces only allowed abstract methods
+thus one abstract method meant functional interface...it was simple
+As of java 8, interface can have default static methods alongside abstract methods, Harder to differentiate between Interface and Functional Interface
+Interface Vs Abstract Class
+Interface Can't have Constructor and members that aren't final
+Abstract Class Can have Constructor and members that aren't final
+You can Spot Functional Interface by reading documentation and making sure it has single abstract methods and if there are others they must b static, default or final members
+java.util.stream.Stream; 
+java.util.List; 
+ 
+cat ../$(ls ../ | grep Stream) cool_trick
+java.util.stream.Collectors; 
+Predicate Operation
+Predicate Operation - Process Data based on Condition (predicate)
+Method Reference
+Song::getYear 
+Optional Wrapper
+optional wrapper is a pretty neat way to return any type of value or no value at all and still be fine with recipient because u have to check before opening the wrapper..that add a layer of overhead with a layer of safty..now you don't have to stress about edge case when returning something...it is somethign the recepient will have to deal with
+ 
+Midi - musical instrument digital interface
+How to know if a class has risky behavior - when there is some sort of throws exception in class declaration or in documentation
+try -> catch
+Exception is an object of Type Exception
+Throwable > Exception > (IOException, InterruptedException) {Polymorphism Baby!)
+Check & Unchecked Exceptions
+Exceptions That aren't subclass of RuntimeException are checked at compile time
+u don't have to throw catch and declare RuntimeException the compiler won't check but it will for everything else
+if-else is conditional obviously..it is for a fix conditional checking..if something is wrong then do something | try catch on the other hand is more like if any one of these is wrong...do this
+"Finally" works whether excpetion try is completed or throw and caught
+ 
+ 
+Multiple Exceptions (Nice)
+Exceptions are Polymorphics
+catch blocks are'nt like overloaded methods. they won't choose the best match. So Inferior classes should be at the top like Dog > Canine > Animals...put that in any other order and compiler will get mad
+ 
+ 
+When You don't want to handle an Exception...Duck It
+throw (without s) is an actual act of throwing an exception [throw new IOException("File not found"); ]
+
+throws (beside method name) means this method might throw an exception...caller must handle it [void doSome () throws IOException {} ]
+
+"Throw beside method name is a ducker" ✅EYes — throws means this method ducks the exception.EE"Throw inside method triggers exception" ✅EYes — throw is used to actually throw an exception object.
+Exception "Handle Or Declare Law" You either catch exception in the act or double it and give it to the next person
+a try with only a finally(no catch) must still declare the exception (meaning try without catch even tho it has a finally is a ducker)
+Patience Yields Focus [on_hold]
+on_hold is a stuff i want to do but i don't want to diturb my focus so i will do it after the hacking session end
+static method can only call static methods and static variables like static void main { go(); } void go (); is illegal because go is not a static method but u can call go with Object Reference..such as static void main { TestObj testobj = new TestObj(); testobj.go() } void go () {} is perfectly legal
+
+ 
+ 
+JFrame is for app windows
+import javax.swing.*; 	<- To use swing elements like JFrame JButton etc..
+Event Handling
+Swing GUI components are Event Sources
+Event Source is an object that can turn actions (Click mouse, type a key, close a window) into events.

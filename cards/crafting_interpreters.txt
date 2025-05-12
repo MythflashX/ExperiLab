@@ -1,0 +1,86 @@
+lexing / scanning / lexical analysis
+Compiler-Compilers yacc ANTLR
+Parsing
+Abstract Syntax Tree
+Tokens
+
+binding resolution
+static analysis
+binding & resolution
+statically_type & dynamically_type
+intermediate representation
+
+control flow graph
+static single-assignment
+continuation-parsing
+three-address code
+front end middle end backend for compilers
+Source Code is Turned to Intermediate Representation Intermediate Representation is turned to machine code..that way..u can implement multiple langauge to generate IR (middle end codes) and backend(compilers) can have better time generating machine code...or else...u would need to write compilers for every architectures for each languagges...sort of like Java and JVM...java source code is frontend(sort of) Javac turned it to bytecode (IR middlend (sort of)) and then JVM turned to machine instruction
+
+constant folding
+byte code
+Native Code Generation Or Virtual Machine Codes
+Implement your VM in C and you can run it on computer that has C compiler
+
+Language Virtual Machine & System Virtual Machine
+
+Single Pass Compiler
+Syntax Directed Translation
+Tree Walk Interpreter
+Transpilers
+Just In Time Compilation
+compiler Vs Interpreters
+memory management / reference counting & tracing garbage collection
+expression vs statement
+expression - produce a value
+statement - produce an effect or assign junks
+dynamic dispatch
+parameters vs argument
+
+first class
+closures / nested functions?
+class-based and prototype-based languages?
+First/Second/Third Class
+Abstract Class
+Concrete Class
+Static Class
+Singleton Class
+Final Class
+Nested Class
+Interface Class
+Buffered_Reader
+IOException
+InputStreamReader
+Charset
+Why does C have function precedence? like function prototype is necessity prior function call if the function hasn't been defined by that point and yet method don't need function precendence in both c++ and Java...C had limited memory at the time and it struggle to load big source code so it can't have parse tree and cool stuffs like those..so function precedence becomes a necessity
+ 
+ 
+Regular Expression
+Aggregated Data Type
+processing numbers in default instead of making a case from 0-9 is quite smart..i will remember to use that one later
+ 
+ 
+Maximal Munch
+Context Free Grammer
+Context Free Vs Regular Grammer
+Regular Grammer -> 123 -> numbers (Tokenizing or mapping) st
+strict 
+ 
+Context Free Grammer is more verbose and elaborate like u can map to say $dir/$path_to_somewhere where $dir can be /root/home/ and $path to somewehre can be /onyx/savefile...point is...context free can be branch down to several component...like how u would determine the operator precedence of a calculator or a language feature
+ 
+ 
+expression > x + y
+statement = x
+expression can be part of statement but statements aren't expression
+statement = expression + expression
+ 
+ 
+Nested Class
+Metaprogramming 
+java.io.PrintWriter; 
+type.split(":")[0].trim[]; nice_trick
+Functional Paradigm Language
+Pattern Matching Vs Type Matching
+Expression Problem
+The Visitor Pattern
+Visitor Pattern is similar to C++ virtual function..not quite but it is similar

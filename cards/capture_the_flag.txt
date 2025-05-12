@@ -1,0 +1,53 @@
+Capture The Flag
+hexdump -> covert binary to hex format for readability
+
+mktemp -d -> create a temporary directory in /tmp and print the directory name. good for experiments
+
+base64 - encode or decode with base64 encoding (transmitting binary data over text channel)
+ENCODE: echo "Hello" | base64 DECODE:  echo "SGVsbG8K" | base64 --decode
+
+tr (translate or replace character in input)
+tr -> echo "hello_world" | tr 'a-z' 'A-Z'
+
+xxd - make a hexdump or do the reverse
+xxd can create a hexdump from binary file or a hexdump back to binary
+xxd -r -p file.extension > original [-r (rever) -p (works with plain hex dump format)] (if resulting file doesn't work) remove -p
+xxd -r filename.txt > original [-r (revert)] is sufficient for most case...
+
+file determine file type
+file filename (it will tell you what type of file it is even if the file doesn't have extension type like .txt or anything)
+
+extract bzip2 -d file.bz2
+extract gzip -d file.gz
+extract tar -xvf file.tar
+ 
+ 
+SSH OPENSSH KEYS Private & Public Keys
+Key-Based SSH Login
+ssh keys too open - that is pretty neat actually...ssh won't allow your private key to connect to the server if it is read write or do whatever they want by everyone using the system(work desktops are used by multiple users with differnt accounts) so it is required to permission lock chmod 600 sshkey.private if u want to use that key to connect to the server..or else it will just ask u for extra password
+ 
+ 
+SSL - Secure Socket Layer - old insecure now
+TLS - Transport Layer Security - modern secure version
+OpenSSL - tool/library to interact with SSL/TLS connections
+SSL/TLS are used in HTTPS/FTPS/SMTPS and more
+SSL/TLS -> authentication | encryption | integrity
+ 
+ 
+Port Scan send client request to range of server port to find active ports
+postsweep scan multiple port for specific listening port
+Internet Protocol Sweep
+TCP/IP 
+Nmap - Map a network, find open ports, detect services, reconnaissance tool
+Ncat is from Nmap suite - Swiss Army Knife for network communication
+Ncat can send, receive data over TCP or UDP
+Ncat work as client or server
+Ncat can be used to setup backdoor, transfer files, chat, connect to port manually
+Scanning TCP, SYN, UDP, ACK, etc...
+nc - netcat - Swiss Army Knife for network communication
+telnet - old school client -> connect to TCP ports | only works with plain connection | No SSL, No Encryption
+ 
+SETUID & SETGID
+setuid -> gives the privilege access of the owner to every user (for example root user created a file and want other user to use the program but don't want to give them the same privilege...you set uid..that way every other user can run the file with root privileges without having root access)
+setgid -> same as setuid but for groups
+grep -r * "term" (find term in every file in the directory and sub directory) cool_trick
